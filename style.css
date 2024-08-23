@@ -1,0 +1,171 @@
+/* คุมโทน */
+:root {
+ --primary: #eefbfb;
+ --second: #12232e;
+ --blue: #007cc7;
+ --lightblue: #4da8da;
+ --darkblue: #203647;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ padding: 0;
+ margin: 0;
+}
+/* แต่งเพิ่ม */
+
+body {
+ font-family: Arial, sans-serif;
+ padding: 0;
+ margin: 0;
+ background-color: var(--second);
+}
+
+a {
+ text-decoration: none;
+ color: #eefbfb;
+ font-size: 21px;
+ width: 350px;
+ border-bottom: 2px solid transparent;
+ transition: border-color 0.3s warping;
+}
+.navbar {
+ margin: 0 auto;
+ text-align: center;
+ color: #eefbfb;
+ background-color: #203647;
+}
+.header {
+ padding: 20px;
+ width: 100%;
+}
+
+.navlink {
+ width: 150px;
+ text-align: center;
+ display: inline-block;
+ text-decoration: none;
+ color: white;
+}
+.navbar a {
+ padding: 15px 15px 15px 15px;
+}
+
+a:hover {
+ border-bottom: 2px solid #eefbfb;
+ transform: scale(1.05);
+}
+
+.contairner {
+ width: 1024px;
+ margin: 0 auto;
+ text-align: center;
+ min-height: 100vh;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.footer {
+ width: 100%;
+ margin: 0 auto;
+ text-align: center;
+ background-color: var(--darkblue);
+ color: #eefbfb;
+ padding: 15px 15px 15px 15px;
+}
+
+.footer,
+.navlinks {
+ box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.card {
+ width: 350px;
+ height: 100%;
+ background-color: #fff;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ margin: 15px;
+ overflow: hidden;
+ transition: transform 0.3s ease-in-out;
+}
+table {
+ border: 1 solid var(--second);
+ background-color: var(--primary);
+}
+.tcard {
+ width: 300px;
+ height: 100%;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ margin: 15px;
+ overflow: hidden;
+ transition: transform 0.3s ease-in-out;
+}
+.card:hover,
+.tcard:hover {
+ transform: scale(1.03);
+}
+.w-100 {
+ width: 100%;
+}
+.w-75 {
+ width: 75%;
+}
+.w-50 {
+ width: 50%;
+}
+img {
+ max-width: 100%;
+ max-height: 400px;
+ object-fit: cover; /* Adjust this value based on your preference (e.g., cover, contain) */
+}
+
+.card-header {
+ background-color: var(--darkblue);
+ color: white;
+ padding: 10px;
+ text-align: center;
+}
+
+.card-body {
+ padding: 15px;
+}
+
+.position {
+ font-weight: bold;
+}
+
+table,
+td {
+ border: var(--second) solid;
+ margin: 0;
+ padding: 0;
+}
+
+.text-second1 {
+ text-decoration: none;
+ position: relative;
+ color: var(--second);
+}
+
+.text-second1::before {
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ background: var(--second);
+ border-radius: 50%;
+ z-index: -1;
+ transition: opacity 0.3s ease;
+ opacity: 0;
+}
+
+.text-second:hover::before {
+ opacity: 1;
+}

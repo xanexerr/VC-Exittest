@@ -1,0 +1,39 @@
+:root {
+ --primary: #eefbfb;
+ --second: #12232e;
+ --blue: #007cc7;
+ --lightblue: #4da8da;
+ --darkblue: #203647;
+}
+
+table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #12232e;
+            color: #eefbfb;
+            border: 1px solid #eefbfb;
+        }
+
+th,
+td {
+            border: 1px solid #eefbfb;
+            padding: 6px;
+            text-align: left;
+            font-size: 12px;
+        }
+
+td:hover{
+    /* transform: scale(1.05); */
+    background-color: var(--darkblue);
+}
+th {
+            background-color: #0d1b1e;
+        }
+
+        .time-header {
+            background-color: #0a1519;
+        }
+
+        .activity-cell {
+            background-color: #1c2c33;
+        }
